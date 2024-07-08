@@ -1,0 +1,18 @@
+specVersion: v0.1.0
+package:
+  name: cosmos
+  version: v0.1.0
+  url: https://github.com/streamingfast/substreams-starknet
+  image: ./logo.jpeg
+  doc: |
+    These substreams modules is bundling lib and proto files descriptor for starknet chain 
+    
+
+network: starknet
+
+protobuf:
+  descriptorSets:
+    - module: buf.build/streamingfast/firehose-starknet
+    - module: buf.build/protocolbuffers/wellknowntypes
+      symbols:
+        - google.protobuf.Duration
